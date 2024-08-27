@@ -30,10 +30,6 @@
 #ifndef TPCircularBuffer_AudioBufferList_h
 #define TPCircularBuffer_AudioBufferList_h
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 #include "TPCircularBuffer.h"
 #include <AudioToolbox/AudioToolbox.h>
 
@@ -224,9 +220,5 @@ UInt32 TPCircularBufferPeekContiguousWrapped(TPCircularBuffer *buffer, AudioTime
  * @return The number of frames in the given audio format that can be stored in the buffer
  */
 UInt32 TPCircularBufferGetAvailableSpace(TPCircularBuffer *buffer, const AudioStreamBasicDescription *audioFormat);
-    
-#ifdef __cplusplus
-}
-#endif
 
 #endif
